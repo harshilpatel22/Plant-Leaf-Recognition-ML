@@ -47,29 +47,29 @@ splitfolders.ratio(input_folder, output=output_folder, seed=42, ratio=(.7, .15, 
 
 The model uses MobileNetV2 with transfer learning. The base layers are frozen, and a few dense layers are added for plant leaf classification.
 To start training the model, run the notebook plant-leaf-classification.ipynb. It will:
-Load the data using ImageDataGenerator for image augmentation.
-Train the model for 10 epochs.
-Save the trained model and class indices.
-After training, the model is saved as plant-recognition-model.h5.
+
+   1. Load the data using ImageDataGenerator for image augmentation.
+   2. Train the model for 10 epochs.
+   3. Save the trained model and class indices.
+   4. After training, the model is saved as plant-recognition-model.h5.
 
 3. Deploying the model:
 
    Start the Flask Application:
 
-    The app.py file serves as the backend for the Flask application.
-    The app allows users to upload plant leaf images, which are then passed to the trained model for classification.
-    Run the Flask app with the following command:
-       python app.py
+    1. The app.py file serves as the backend for the Flask application.
+    2. The app allows users to upload plant leaf images, which are then passed to the trained model for classification.
+    3. Run the Flask app with the following command:
+          python app.py
 
 ---
 
 ## Project Structure
 
-Project Structure
-plant-leaf-classification.ipynb: Jupyter notebook for training the model.
-app.py: Flask application for serving the trained model and making predictions.
-model/plant-recognition-model.h5: The trained model.
-model/class_indices.json: JSON file containing the mapping of class indices to labels.
-uploads/: Directory to store uploaded plant images for prediction.
+   1. plant-leaf-classification.ipynb: Jupyter notebook for training the model.
+   2. app.py: Flask application for serving the trained model and making predictions.
+   3. model/plant-recognition-model.h5: The trained model.
+   4. model/class_indices.json: JSON file containing the mapping of class indices to labels.
+   5. uploads/: Directory to store uploaded plant images for prediction.
 
 
