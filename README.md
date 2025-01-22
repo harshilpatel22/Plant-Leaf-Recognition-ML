@@ -34,6 +34,7 @@ To set up this project locally, follow these steps:
 
 Organize the dataset into separate folders for each class (plant species).
 Use the splitfolders Python package to split the dataset into training, validation, and test sets:
+
 import splitfolders
 input_folder = '/path/to/raw/data'
 output_folder = '/path/to/split/data'
