@@ -6,19 +6,6 @@ classification.
 
 ---
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Training the Model](#training-the-model)
-  - [Deploying the Model](#deploying-the-model)
-- [Project Structure](#project-structure)
-- [Results](#results)
-- [Future Work](#future-work)
-- [Acknowledgments](#acknowledgments)
-
----
-
 ## Project Overview
 
 The Plant Leaf Recognition project leverages **MobileNetV2**, a pre-trained deep learning model, and fine-tunes it to classify various plant leaves. 
@@ -36,6 +23,8 @@ To set up this project locally, follow these steps:
    git clone https://github.com/yourusername/Plant-Leaf-Recognition-ML.git
    cd Plant-Leaf-Recognition-ML
 2. **Install required dependencies**
+
+---
 
 ## Usage
 
@@ -67,6 +56,8 @@ After training, the model is saved as plant-recognition-model.h5.
     The app allows users to upload plant leaf images, which are then passed to the trained model for classification.
     Run the Flask app with the following command:
        python app.py
+
+---
 
 ## Project Structure
 
